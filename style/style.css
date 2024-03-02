@@ -1,0 +1,42 @@
+
+/*sessão geral*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    height: 680px;
+    width: 1000px;
+}
+.light{
+    background-color: #9A927A;
+}
+/*sessão header*/
+.display-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.display-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+/*sessão menu*/
+.display-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.menu-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
