@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SeuOrçamento</title>
-    <link rel="stylesheet" href="../../style/style.css">
-</head>
-<body>
-    
-    <section class="header">
-        <div class="display-header container">
-            <div class="logo">
-                <img src="#" alt="" style="background-color: red; width: 315px; height: 315px; border-radius: 100%;">
-            </div>
-            <div class="display-body">
-                <h1>Realize seu Orçamento de maneira simples</h1>
-                <a href="#menu">Comece aqui</a>   
-            </div>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="header bgTextura">
+      <div class="display-header container">
+        <div class="logo">
+          <img
+            src="../../image/logo.png"
+            alt=""
+            style="width: 315px; height: 315px"
+          />
         </div>
-    </section>
-    
-    <section class="menu light" id="menu">
-        <div class="display-menu container">
-            
-            <div class="menu-options">
-                <button>Parede / tijolos 8 furos</button> 
-                <button>Laje / Trilho e h8</button>  
-                <button>Telhado convencional</button>   
-                <button>Piso</button>   
-            </div>
-            <div class="menu-image">
-                <img src="#" alt="" style="background-color: red; width: 315px; height: 315px;">
-            </div>
+        <div class="display-body">
+          <h1 class="title">
+            Realize seu Orçamento <br />
+            de maneira simples
+          </h1>
+          <a class="button" href="#menu">Comece agora</a>
         </div>
-
+      </div>
     </section>
 
-</body>
+    <section class="menu bgTextura" id="menu">
+      <div class="display-menu container">
+        <div class="title">Infome os dados necessários em cada seção</div>
+        <div class="display-menu-row">
+          <div class="menu-options">
+            <button onclick="pageWall()">Parede / tijolos 8 furos</button>
+            <button>Laje / Trilho e h8</button>
+            <button>Telhado convencional</button>
+            <button>Piso</button>
+          </div>
+          <div class="menu-image">
+            <img
+              src="#"
+              alt=""
+              style="background-color: red; width: 315px; height: 315px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../../js/script.js"></script>
+  </body>
 </html>

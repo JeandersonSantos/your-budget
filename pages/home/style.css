@@ -1,0 +1,91 @@
+/*sessão geral*/
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  background-image: url("../../image/parede-de-tijolo.jpg");
+  background-size: cover;
+}
+
+.container {
+  min-height: 680px;
+  width: 1180px;
+}
+.bgTextura {
+  background-image: url("../../image/bg-textura.jpg");
+  background-size: cover;
+}
+.bgSuede {
+  background-color: #9a927a;
+}
+
+.bgLinear1 {
+  background: linear-gradient(to bottom, #0f0e0d, #dbd4c1);
+}
+.bgLinear2 {
+  background: linear-gradient(to bottom, #dbd4c1, #0f0e0d);
+}
+.button{
+    padding: 20px 40px 20px 40px;
+    border-radius: 20px;
+    color: #000;
+    background-color: #faae00;
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.button:hover {
+    background-color: #ffc107; /* Mudança de cor ao passar o mouse */
+}
+/*sessão header*/
+.display-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display-header .logo {
+  margin-top: 50px;
+}
+.display-header .title {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+.display-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*sessão menu*/
+.display-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-menu .title {
+  margin-top: 50px;  
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 40px;
+}
+
+.display-menu-row {
+  display: flex;
+  align-items: center;
+}
+
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-right: 20px;
+}
+.menu-image {
+  margin-left: 20px;
+}
