@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100wh;
+  color: #fff;
+  background-image: url("../../image/bg-textura.jpg");
+  background-size: cover;
+}
+.display-menu-row {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 70px;
+}
+.display-table {
+  margin-top: 10px;
+  padding: 20px;
+}
+.style-label {
+  font-size: 20px;
+}
+.menu-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-right: 20px;
+}
+.bgTextura {
+  margin: auto;
+  max-width: 1000px;
+  margin-top: 50px;
+}
+.title {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+button,
+input {
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 21px;
+  max-width: 250px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.display-table {
+  width: 705px;
+  height: 378px;
+  background-color: #d9d9d9;
+  color: black;
+  font-size: 20px;
+}
+/* Estilizando o botão flutuante */
+.floating-button {
+  position: fixed;
+  bottom: 20px; /* Distância do fundo */
+  right: 20px; /* Distância da direita */
+}
+
+.floating-button a {
+  display: block; /* Para tornar toda a área da âncora clicável */
+  width: 50px; /* Largura da imagem */
+  height: 50px; /* Altura da imagem */
+  border-radius: 50%; /* Para tornar a imagem redonda, ajuste conforme necessário */
+  overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do botão */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: background-color 0.3s; /* Efeito de transição para a cor de fundo */
+}
+
+.floating-button img {
+  width: 100%; /* Para preencher todo o espaço dentro da âncora */
+  height: auto; /* Para manter a proporção da imagem */
+}
+@media (max-width: 1024px) {
+  .display-table {
+    width: 450px;
+    margin-bottom: 50px;
+  }
+  button,
+  input {
+    max-width: 200px;
+  }
+}
+@media (max-width: 784px) {
+  .display-menu-row {
+    flex-direction: column;
+  }
+  button,
+  input {
+    max-width: 250px;
+  }
+  .menu-options {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .display-table {
+    width: 400px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .display-menu-row {
+    flex-direction: column;
+  }
+  .menu-options {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .display-table {
+    width: 350px;
+    margin-bottom: 50px;
+  }
+}

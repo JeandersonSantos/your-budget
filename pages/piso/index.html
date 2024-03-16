@@ -9,12 +9,12 @@
   <body>
     <section class="wall bgTextura" id="menu">
       <div class="display-wall container">
-        <div class="title">Orçamento para parede</div>
+        <div class="title">Orçamento para piso</div>
         <div class="display-menu-row">
           <div class="menu-options">
-            <label class="style-label" for="input1">Altura em metros</label>
+            <label class="style-label" for="input1">Comprimento em metros</label>
             <input type="number" id="input1" />
-            <label class="style-label" for="input2">Comprimento em metros</label>
+            <label class="style-label" for="input2">Lagura em metros</label>
 
             <input type="number" id="input2" />
             <button onclick="calcularOrcamento()">Calcular</button>
@@ -40,7 +40,7 @@
   <script>
     function back() {
       let caminhoAtual = window.location.pathname;
-      let novoCaminho = caminhoAtual.replace("/parede/", "/home/");
+      let novoCaminho = caminhoAtual.replace("/piso/", "/home/");
       window.location.href = novoCaminho;
     }
     function calcularOrcamento() {
@@ -51,26 +51,24 @@
         alert("verifique os campos");
       } else {
         const area = input1 * input2;
-        const tijolos = Math.ceil(area) * 25;
-        const areia = Math.ceil(area) * 2;
-        const arisco = Math.ceil(area) * 2;
-        const cimento = Math.ceil(area) * 50;
+        const cimento = Math.ceil(area) * 25;
+        const areia = Math.ceil(area) * 1.5;
+        const brita = Math.ceil(area) * 0.5;
 
         const materialList = document.getElementById("materialList");
         materialList.innerHTML = ""; // Limpa a lista
 
-        const tijolosItem = document.createElement("li");
-        tijolosItem.textContent = `${tijolos} tijolos`;
-        materialList.appendChild(tijolosItem);
-        const areiaItem = document.createElement("li");
-        areiaItem.textContent = `${areia} carros de mão de areia`;
-        materialList.appendChild(areiaItem);
-        const ariscoItem = document.createElement("li");
-        ariscoItem.textContent = `${arisco} carros de mão de arisco`;
-        materialList.appendChild(ariscoItem);
         const cimentoItem = document.createElement("li");
-        cimentoItem.textContent = `${cimento} KG de cimento`;
+        cimentoItem.textContent = `${cimento} Kg de cimento`;
         materialList.appendChild(cimentoItem);
+
+        const areiaItem = document.createElement("li");
+        areiaItem.textContent = `${areia} carro de mão de areia`;
+        materialList.appendChild(areiaItem);
+
+        const britaItem = document.createElement("li");
+        britaItem.textContent = `${brita} carro de mão de brita`;
+        materialList.appendChild(britaItem);
       }
     }
   </script>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="wall bgTextura" id="menu">
+      <div class="display-wall container">
+        <div class="title">Orçamento para telhado </div>
+        <div class="display-menu-row">
+          <div class="menu-options">
+            <label class="style-label"for="input1">Comprimento em metros</label>
+            <input type="number" id="input1" />
+            <label class="style-label" for="input2">Lagura em metros</label>
+
+            <input type="number" id="input2" />
+            <button onclick="calcularOrcamento()">Calcular</button>
+          </div>
+          <div class="display-title-and-table">
+            <span class="style-label">Veja aqui o que será necessário</span>
+            <div
+              class="display-table" id="materialList"
+            >
+          <ul style="color: black;">
+            <!-- <li>250 tijolos</li>
+            <li>50 kg de cimento</li> -->
+          </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="floating-button">
+        <a href="#" onclick="back()">
+          <img src="../../image/back.png" alt="Botão" />
+        </a>
+      </div>
+    </section>
+  </body>
+  <script>
+    function back() {
+      let caminhoAtual = window.location.pathname;
+      let novoCaminho = caminhoAtual.replace("/telhado/", "/home/");
+      window.location.href = novoCaminho;
+    }
+    function calcularOrcamento() {
+      const input1 = parseFloat(document.getElementById("input1").value);
+      const input2 = parseFloat(document.getElementById("input2").value);
+
+
+      if(input1 <= 0 || input2 <= 0 || !input1 || !input2){
+        alert("verifique os campos")
+      } else {
+        
+      const area = input1 * input2;
+      const linha = Math.ceil(area) * 1.4;
+      const caibo = Math.ceil(area) * 2.5;
+      const ripa = Math.ceil(area) * 2.5;
+      const telha = Math.ceil(area) * 36;
+
+      const materialList = document.getElementById("materialList");
+      materialList.innerHTML = ""; // Limpa a lista
+
+      const linhaItem = document.createElement("li");
+      linhaItem.textContent = `${linha} metros de linha`;
+      materialList.appendChild(linhaItem);
+      const caiboItem = document.createElement("li");
+      caiboItem.textContent = `${caibo} metros de caibo`;
+      materialList.appendChild(caiboItem);
+      const ripaItem = document.createElement("li");
+      ripaItem.textContent = `${ripa} metros de ripa`;
+      materialList.appendChild(ripaItem);
+      const telhaItem = document.createElement("li");
+      telhaItem.textContent = `${telha} unidade de telha`;
+      materialList.appendChild(telhaItem);
+
+    }
+
+  }
+  </script>
+</html>

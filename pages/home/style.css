@@ -89,3 +89,71 @@ body {
 .menu-image {
   margin-left: 20px;
 }
+
+button {
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 21px;
+  min-width: 350px;
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 900px;
+  }
+}
+
+@media (max-width: 778px) {
+  .container {
+    width: 650px;
+  }
+  /*home*/
+  .display-header .title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .display-header .logo {
+    margin-top: 25px;
+  }
+
+  /*menu*/
+  .menu-image {
+    display: none
+  }
+  .display-menu .title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .menu-options {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    min-height: 600px;
+    width: 380px;
+  }
+  /*home*/
+  .display-header .title {
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  .display-header .logo {
+    margin-top: 25px;
+  }
+
+  /*menu*/
+  .menu-image {
+    display: none
+  }
+  .display-menu .title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .menu-options {
+    margin-right: 0px;
+  }
+}
+
