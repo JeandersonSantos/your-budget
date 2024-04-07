@@ -16,5 +16,5 @@
 - Utilize a interface para inserir as dimensões e calcular a quantidade de material necessário.
 
 ## Autores
-Este projeto foi desenvolvido por: [JeandersonSantos], [Brunotorresdev], [VilckFarias], [vinycius02], [ailissonjk7] e Joaquim
+Este projeto foi desenvolvido por: JeandersonSantos, Brunotorresdev, VilckFarias, vinycius02, ailissonjk7 e Joaquim
 
