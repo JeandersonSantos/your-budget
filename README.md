@@ -1,6 +1,6 @@
 # your-budget
 
-- Este projeto é um web-site onde calcula o orçamento de construção de uma casa, desenvolvido como parte do curso "Construindo Meu Portfólio de Sucesso" da Infinity Solutions App onde tive a oportunidade de auxiliar os alunos no desencolvimeto do projeto assim como desenvolver algumas funcionalidades no mesmo, onde sigo fazendo algumas melhoras.
+- Este projeto é um web-site onde calcula o orçamento de construção de uma casa, desenvolvido como parte do curso "Fundamentos da Programação" da Infinity Solutions App onde tive a oportunidade de auxiliar os alunos no desencolvimeto do projeto assim como desenvolver algumas funcionalidades no mesmo, onde sigo fazendo algumas melhoras.
 
 ## Tecnologias 
   HTML, CSS e JavaScript.
