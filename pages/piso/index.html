@@ -12,7 +12,9 @@
         <div class="title">Orçamento para piso</div>
         <div class="display-menu-row">
           <div class="menu-options">
-            <label class="style-label" for="input1">Comprimento em metros</label>
+            <label class="style-label" for="input1"
+              >Comprimento em metros</label
+            >
             <input type="number" id="input1" />
             <label class="style-label" for="input2">Lagura em metros</label>
 
@@ -38,11 +40,6 @@
     </section>
   </body>
   <script>
-    function back() {
-      let caminhoAtual = window.location.pathname;
-      let novoCaminho = caminhoAtual.replace("/piso/", "/home/");
-      window.location.href = novoCaminho;
-    }
     function calcularOrcamento() {
       const input1 = parseFloat(document.getElementById("input1").value);
       const input2 = parseFloat(document.getElementById("input2").value);
@@ -72,4 +69,5 @@
       }
     }
   </script>
+  <script src="../../js/script.js"></script>
 </html>

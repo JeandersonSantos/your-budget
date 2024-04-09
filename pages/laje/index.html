@@ -41,11 +41,6 @@
     </section>
   </body>
   <script>
-    function back() {
-      let caminhoAtual = window.location.pathname;
-      let novoCaminho = caminhoAtual.replace("/laje/", "/home/");
-      window.location.href = novoCaminho;
-    }
     function calcularOrcamento() {
       const input1 = parseFloat(document.getElementById("input1").value);
       const input2 = parseFloat(document.getElementById("input2").value);
@@ -95,4 +90,5 @@
       }
     }
   </script>
+    <script src="../../js/script.js"></script>
 </html>
