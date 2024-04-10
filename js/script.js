@@ -1,28 +1,25 @@
 function pageWall() {
-  let caminhoAtual = window.location.pathname;
-  let novoCaminho = `pages/parede${caminhoAtual}`;
+  let novoCaminho = `pages/parede/index.html`;
   window.location.href = novoCaminho;
 }
 
 function pageLaje() {
-  let caminhoAtual = window.location.pathname;
-  let novoCaminho = `pages/laje${caminhoAtual}`;
+  let novoCaminho = `pages/laje/index.html`;
   window.location.href = novoCaminho;
 }
 
 function pageTelhado() {
-  let caminhoAtual = window.location.pathname;
-  let novoCaminho = `pages/telhado${caminhoAtual}`;
+  let novoCaminho = `pages/telhado/index.html`;
   window.location.href = novoCaminho;
 }
 
 function pagePiso() {
-  let caminhoAtual = window.location.pathname;
-  let novoCaminho = `pages/piso${caminhoAtual}`;
+  let novoCaminho = `pages/piso/index.html`;
   window.location.href = novoCaminho;
 }
 
 function back() {
-  let novoCaminho = "/index.html";
-  window.location.href = novoCaminho;
+  let caminhoAtual = window.location.pathname;
+  let novoCaminho = caminhoAtual.replace(/pages\/.*$/, "");
+  window.location.href = `${novoCaminho}index.html#menu`;
 }
