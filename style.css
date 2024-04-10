@@ -4,7 +4,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0px;
-  background-image: url("../../image/parede-de-tijolo.jpg");
+  background-image: url("./image/parede-de-tijolo.jpg");
   background-size: cover;
 }
 
@@ -13,7 +13,7 @@ body {
   width: 1180px;
 }
 .bgTextura {
-  background-image: url("../../image/bg-textura.jpg");
+  background-image: url("./image/bg-textura.jpg");
   background-size: cover;
 }
 .bgSuede {
