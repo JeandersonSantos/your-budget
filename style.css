@@ -4,8 +4,10 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0px;
-  background-image: url("./image/parede-de-tijolo.jpg");
+  background-image: url("./image/parede.png");
   background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
 
 .container {
