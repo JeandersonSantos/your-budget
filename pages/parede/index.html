@@ -59,20 +59,30 @@
 
         const tijolosItem = document.createElement("li");
         // tijolosItem.textContent = `${formatNumber(tijolos)} tijolos`;
-        tijolosItem.textContent = `${formatTextBrick(tijolos)}, (tijolo de 8 furos)`;
+        tijolosItem.textContent = `${formatTextBrick(
+          tijolos
+        )}, (tijolo de 8 furos)`;
         materialList.appendChild(tijolosItem);
         const areiaItem = document.createElement("li");
-        areiaItem.textContent = `${formatNumber(areia)} carros de mão de areia`;
+        // areiaItem.textContent = `${formatNumber(areia)} carros de mão de areia`;
+        areiaItem.textContent = `${formatTextSandAndSkittish(areia)} de areia`;
         materialList.appendChild(areiaItem);
         const ariscoItem = document.createElement("li");
-        ariscoItem.textContent = `${formatNumber(
+        // ariscoItem.textContent = `${formatNumber(
+        //   arisco
+        // )} carros de mão de arisco`;
+        ariscoItem.textContent = `${formatTextSandAndSkittish(
           arisco
-        )} carros de mão de arisco`;
+        )} de arisco`;
         materialList.appendChild(ariscoItem);
         const cimentoItem = document.createElement("li");
         // cimentoItem.textContent = `${formatNumber(cimento)} KG de cimento`;
         cimentoItem.textContent = formatTextCement(cimento);
         materialList.appendChild(cimentoItem);
+        const obsItem = document.createElement("p");
+        obsItem.textContent =
+          "Obs: 1m³ de areia ou arisco tem aproximadamente 20 carros de mão, e 1 carro de mão tem aproximadamente 12,5 pás";
+        materialList.appendChild(obsItem);
       }
     }
   </script>

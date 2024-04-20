@@ -62,12 +62,19 @@
         materialList.appendChild(cimentoItem);
 
         const areiaItem = document.createElement("li");
-        areiaItem.textContent = `${formatNumber(areia)} carro de mão de areia`;
+        // areiaItem.textContent = `${formatNumber(areia)} carro de mão de areia`;
+        areiaItem.textContent = `${formatTextSandAndSkittish(areia)} de areia`;
         materialList.appendChild(areiaItem);
 
         const britaItem = document.createElement("li");
-        britaItem.textContent = `${formatNumber(brita)} carro de mão de brita`;
+        // britaItem.textContent = `${formatNumber(brita)} carro de mão de brita`;
+        britaItem.textContent = `${formatTextSandAndSkittish(brita)} de brita`;
         materialList.appendChild(britaItem);
+
+        const obsItem = document.createElement("p");
+        obsItem.textContent =
+          "Obs: 1m³ de areia, arisco ou brita tem aproximadamente 20 carros de mão, e 1 carro de mão tem aproximadamente 12,5 pás";
+        materialList.appendChild(obsItem);
       }
     }
   </script>

@@ -45,14 +45,16 @@ function formatTextCement(amount) {
     if (kilos !== 0) {
       result =
         result +
-        ` e ${kilos} quilos de cimento, (cada saco de cimento com 50kg)`;
+        ` e ${formatNumber(
+          kilos
+        )} quilos de cimento, (cada saco de cimento com 50kg)`;
       return result;
     } else {
       result = result + ", (cada saco de cimento com 50kg)";
       return result;
     }
   } else {
-    return `${amount} kg de cimento`;
+    return `${formatNumber(amount)} kg de cimento`;
   }
 }
 
@@ -63,14 +65,30 @@ function formatTextBrick(amount) {
     let result = `${milheiro} milheiro(s) de tijolo(s)`;
     let units = total - milheiro;
     if (units !== 0) {
-      result =
-        result +
-        ` e ${units} unidade(s)`;
+      result = result + ` e ${formatNumber(units)} unidade(s)`;
       return result;
     } else {
       return result;
     }
   } else {
-    return `${amount} unidade(s)`;
+    return `${formatNumber(amount)} unidade(s)`;
+  }
+}
+
+function formatTextSandAndSkittish(amount) {
+  if (amount >= 20) {
+    let total = amount / 20;
+    let metro = Math.floor(total);
+    let result = `${metro} metro(s)`;
+    let carros = (total - metro) * 20;
+
+    if (carros !== 0) {
+      result = result + ` e ${formatNumber(carros)} carro de mão`;
+      return result;
+    } else {
+      return result;
+    }
+  } else {
+    return `${formatNumber(amount)} carro de mão`;
   }
 }
