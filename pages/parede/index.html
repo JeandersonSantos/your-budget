@@ -58,7 +58,8 @@
         materialList.innerHTML = ""; // Limpa a lista
 
         const tijolosItem = document.createElement("li");
-        tijolosItem.textContent = `${formatNumber(tijolos)} tijolos`;
+        // tijolosItem.textContent = `${formatNumber(tijolos)} tijolos`;
+        tijolosItem.textContent = `${formatTextBrick(tijolos)}, (tijolo de 8 furos)`;
         materialList.appendChild(tijolosItem);
         const areiaItem = document.createElement("li");
         areiaItem.textContent = `${formatNumber(areia)} carros de mão de areia`;

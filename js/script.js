@@ -55,3 +55,22 @@ function formatTextCement(amount) {
     return `${amount} kg de cimento`;
   }
 }
+
+function formatTextBrick(amount) {
+  if (amount >= 1000) {
+    let total = amount / 1000;
+    let milheiro = Math.floor(total);
+    let result = `${milheiro} milheiro(s) de tijolo(s)`;
+    let units = total - milheiro;
+    if (units !== 0) {
+      result =
+        result +
+        ` e ${units} unidade(s)`;
+      return result;
+    } else {
+      return result;
+    }
+  } else {
+    return `${amount} unidade(s)`;
+  }
+}
