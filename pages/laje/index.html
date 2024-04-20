@@ -23,9 +23,7 @@
           </div>
           <div class="display-title-and-table">
             <span class="style-label">Veja aqui o que será necessário</span>
-            <div
-              class="display-table"
-            >
+            <div class="display-table">
               <ul id="materialList" style="color: black">
                 <!-- Lista de materiais aqui -->
               </ul>
@@ -40,6 +38,7 @@
       </div>
     </section>
   </body>
+  <script src="../../js/script.js"></script>
   <script>
     function calcularOrcamento() {
       const input1 = parseFloat(document.getElementById("input1").value);
@@ -61,34 +60,35 @@
         materialList.innerHTML = ""; // Limpa a lista
 
         const trilhosItem = document.createElement("li");
-        trilhosItem.textContent = `${trilhos} metros de trilhos`;
+        trilhosItem.textContent = `${formatNumber(trilhos)} metros de trilhos`;
         materialList.appendChild(trilhosItem);
 
         const h8Item = document.createElement("li");
-        h8Item.textContent = `${h8} H8`;
+        h8Item.textContent = `${formatNumber(h8)} H8`;
         materialList.appendChild(h8Item);
 
         const epsItem = document.createElement("li");
-        epsItem.textContent = `${eps} placas de isopor`;
+        epsItem.textContent = `${formatNumber(eps)} placas de isopor`;
         materialList.appendChild(epsItem);
 
         const cimentoItem = document.createElement("li");
-        cimentoItem.textContent = `${cimento} Kg de cimento`;
+        cimentoItem.textContent = `${formatNumber(cimento)} Kg de cimento`;
         materialList.appendChild(cimentoItem);
 
         const areiaItem = document.createElement("li");
-        areiaItem.textContent = `${areia} carro de mão de areia`;
+        areiaItem.textContent = `${formatNumber(areia)} carro de mão de areia`;
         materialList.appendChild(areiaItem);
 
         const ariscoItem = document.createElement("li");
-        ariscoItem.textContent = `${arisco} carro de mão de arisco`;
+        ariscoItem.textContent = `${formatNumber(
+          arisco
+        )} carro de mão de arisco`;
         materialList.appendChild(ariscoItem);
 
         const britaItem = document.createElement("li");
-        britaItem.textContent = `${brita} carro de mão de brita`;
+        britaItem.textContent = `${formatNumber(brita)} carro de mão de brita`;
         materialList.appendChild(britaItem);
       }
     }
   </script>
-    <script src="../../js/script.js"></script>
 </html>

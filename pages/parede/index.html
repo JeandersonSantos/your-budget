@@ -39,6 +39,7 @@
       </div>
     </section>
   </body>
+  <script src="../../js/script.js"></script>
   <script>
     function calcularOrcamento() {
       const input1 = parseFloat(document.getElementById("input1").value);
@@ -57,19 +58,18 @@
         materialList.innerHTML = ""; // Limpa a lista
 
         const tijolosItem = document.createElement("li");
-        tijolosItem.textContent = `${tijolos} tijolos`;
+        tijolosItem.textContent = `${formatNumber(tijolos)} tijolos`;
         materialList.appendChild(tijolosItem);
         const areiaItem = document.createElement("li");
-        areiaItem.textContent = `${areia} carros de mão de areia`;
+        areiaItem.textContent = `${formatNumber(areia)} carros de mão de areia`;
         materialList.appendChild(areiaItem);
         const ariscoItem = document.createElement("li");
-        ariscoItem.textContent = `${arisco} carros de mão de arisco`;
+        ariscoItem.textContent = `${formatNumber(arisco)} carros de mão de arisco`;
         materialList.appendChild(ariscoItem);
         const cimentoItem = document.createElement("li");
-        cimentoItem.textContent = `${cimento} KG de cimento`;
+        cimentoItem.textContent = `${formatNumber(cimento)} KG de cimento`;
         materialList.appendChild(cimentoItem);
       }
     }
   </script>
-  <script src="../../js/script.js"></script>
 </html>
