@@ -35,3 +35,23 @@ function formatNumber(number) {
     return number;
   }
 }
+
+function formatTextCement(amount) {
+  if (amount >= 50) {
+    let total = amount / 50;
+    let sacks = Math.floor(total);
+    let result = `${sacks} saco(s) de cimento`;
+    let kilos = total - sacks;
+    if (kilos !== 0) {
+      result =
+        result +
+        ` e ${kilos} quilos de cimento, (cada saco de cimento com 50kg)`;
+      return result;
+    } else {
+      result = result + ", (cada saco de cimento com 50kg)";
+      return result;
+    }
+  } else {
+    return `${amount} kg de cimento`;
+  }
+}

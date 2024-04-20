@@ -64,10 +64,13 @@
         areiaItem.textContent = `${formatNumber(areia)} carros de mão de areia`;
         materialList.appendChild(areiaItem);
         const ariscoItem = document.createElement("li");
-        ariscoItem.textContent = `${formatNumber(arisco)} carros de mão de arisco`;
+        ariscoItem.textContent = `${formatNumber(
+          arisco
+        )} carros de mão de arisco`;
         materialList.appendChild(ariscoItem);
         const cimentoItem = document.createElement("li");
-        cimentoItem.textContent = `${formatNumber(cimento)} KG de cimento`;
+        // cimentoItem.textContent = `${formatNumber(cimento)} KG de cimento`;
+        cimentoItem.textContent = formatTextCement(cimento);
         materialList.appendChild(cimentoItem);
       }
     }

@@ -57,7 +57,8 @@
         materialList.innerHTML = ""; // Limpa a lista
 
         const cimentoItem = document.createElement("li");
-        cimentoItem.textContent = `${formatNumber(cimento)} Kg de cimento`;
+        // cimentoItem.textContent = `${formatNumber(cimento)} Kg de cimento`;
+        cimentoItem.textContent = formatTextCement(cimento);
         materialList.appendChild(cimentoItem);
 
         const areiaItem = document.createElement("li");
