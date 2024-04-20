@@ -96,6 +96,11 @@ button {
   font-size: 21px;
   min-width: 350px;
   font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:aliceblue;
 }
 
 @media (max-width: 1024px) {
