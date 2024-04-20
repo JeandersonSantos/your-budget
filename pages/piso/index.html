@@ -39,6 +39,7 @@
       </div>
     </section>
   </body>
+  <script src="../../js/script.js"></script>
   <script>
     function calcularOrcamento() {
       const input1 = parseFloat(document.getElementById("input1").value);
@@ -56,18 +57,25 @@
         materialList.innerHTML = ""; // Limpa a lista
 
         const cimentoItem = document.createElement("li");
-        cimentoItem.textContent = `${cimento} Kg de cimento`;
+        // cimentoItem.textContent = `${formatNumber(cimento)} Kg de cimento`;
+        cimentoItem.textContent = formatTextCement(cimento);
         materialList.appendChild(cimentoItem);
 
         const areiaItem = document.createElement("li");
-        areiaItem.textContent = `${areia} carro de mão de areia`;
+        // areiaItem.textContent = `${formatNumber(areia)} carro de mão de areia`;
+        areiaItem.textContent = `${formatTextSandAndSkittish(areia)} de areia`;
         materialList.appendChild(areiaItem);
 
         const britaItem = document.createElement("li");
-        britaItem.textContent = `${brita} carro de mão de brita`;
+        // britaItem.textContent = `${formatNumber(brita)} carro de mão de brita`;
+        britaItem.textContent = `${formatTextSandAndSkittish(brita)} de brita`;
         materialList.appendChild(britaItem);
+
+        const obsItem = document.createElement("p");
+        obsItem.textContent =
+          "Obs: 1m³ de areia, arisco ou brita tem aproximadamente 20 carros de mão, e 1 carro de mão tem aproximadamente 12,5 pás";
+        materialList.appendChild(obsItem);
       }
     }
   </script>
-  <script src="../../js/script.js"></script>
 </html>

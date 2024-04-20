@@ -75,6 +75,21 @@ input {
   width: 100%; /* Para preencher todo o espaço dentro da âncora */
   height: auto; /* Para manter a proporção da imagem */
 }
+
+button {
+  margin-top: 6px;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 21px;
+  min-width: 279px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:aliceblue;
+}
+
 @media (max-width: 1024px) {
   .display-table {
     width: 450px;

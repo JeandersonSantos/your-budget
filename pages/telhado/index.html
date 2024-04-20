@@ -39,6 +39,7 @@
       </div>
     </section>
   </body>
+  <script src="../../js/script.js"></script>
   <script>
     function calcularOrcamento() {
       const input1 = parseFloat(document.getElementById("input1").value);
@@ -57,19 +58,18 @@
         materialList.innerHTML = ""; // Limpa a lista
 
         const linhaItem = document.createElement("li");
-        linhaItem.textContent = `${linha} metros de linha`;
+        linhaItem.textContent = `${formatNumber(linha)} metros de linha`;
         materialList.appendChild(linhaItem);
         const caiboItem = document.createElement("li");
-        caiboItem.textContent = `${caibo} metros de caibo`;
+        caiboItem.textContent = `${formatNumber(caibo)} metros de caibo`;
         materialList.appendChild(caiboItem);
         const ripaItem = document.createElement("li");
-        ripaItem.textContent = `${ripa} metros de ripa`;
+        ripaItem.textContent = `${formatNumber(ripa)} metros de ripa`;
         materialList.appendChild(ripaItem);
         const telhaItem = document.createElement("li");
-        telhaItem.textContent = `${telha} unidade de telha`;
+        telhaItem.textContent = `${formatNumber(telha)} unidade de telha`;
         materialList.appendChild(telhaItem);
       }
     }
   </script>
-  <script src="../../js/script.js"></script>
 </html>
